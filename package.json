@@ -1,0 +1,51 @@
+{
+  "name": "url-monkey",
+  "version": "0.0.1",
+  "description": "let monkey types url for you",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exoticknight/url-monkey.git"
+  },
+  "main": "dist/index.js",
+  "type": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "ts-node ./test/index.spec.ts",
+    "build": "rm -rf dist && tsc",
+    "prebuild": "npm test"
+  },
+  "keywords": [
+    "url",
+    "monkey",
+    "mock",
+    "pattern",
+    "regex",
+    "regexp",
+    "rand",
+    "random",
+    "randexp",
+    "protocal",
+    "domain",
+    "port",
+    "path",
+    "uri"
+  ],
+  "author": {
+    "email": "draco.knight0@gmail.com",
+    "name": "exoticknight"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/tape": "^4.2.32",
+    "tape": "^4.9.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "randexp": "^0.5.3"
+  }
+}
