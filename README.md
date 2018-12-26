@@ -2,6 +2,8 @@
 
 let monkey types url for you
 
+random string provided by [randexp](https://www.npmjs.com/package/randexp)
+
 ## Install
 
 ```bash
@@ -11,10 +13,12 @@ npm i -S url-monkey
 ## Usage
 
 ```javascript
-import URLMonkey from 'monkey-url'
+import URLMonkey from 'url-monkey'
 
 const monkey = new URLMonkey('www.google.com', {
-  path: /^\/greeting\/([^\/]+?)(?:\/)?$/i
+  path: /^\/greeting\/([^\/]+?)(?:\/)?$/i,
+  // protocol: 'https',  // can be regex, too
+  // port: 80,  // can be regex, too
 })
 
 Array(5).fill(0).forEach(() => console.log(monkey.type()))
